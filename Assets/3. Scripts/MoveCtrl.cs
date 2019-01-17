@@ -26,7 +26,6 @@ public class MoveCtrl : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(speed);
         if (!isStopped)
         {
 
@@ -48,11 +47,6 @@ public class MoveCtrl : MonoBehaviour
         isUping = false;
     }
 
-    void BoostingEnd()
-    {
-        speed = 3f;
-    }
-
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if (hit.gameObject.tag == "JumpTable")
@@ -61,14 +55,6 @@ public class MoveCtrl : MonoBehaviour
             Invoke("UpingEnd", 0.5f);
 
         }
-
-        if(hit.gameObject.tag == "Booster")
-        {
-            speed = 5f;
-            CancelInvoke("BoostingEnd");
-            Invoke("BoostingEnd", 0.7f);
-        }
-
     }
 
 }
