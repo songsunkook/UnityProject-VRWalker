@@ -69,6 +69,11 @@ public class MoveCtrl : MonoBehaviour
             Invoke("BoostingEnd", 0.7f);
         }
 
+        if(hit.gameObject.tag == "Goal")
+        {
+            NextStage.gotoNext();
+        }
+
     }
 
 }
