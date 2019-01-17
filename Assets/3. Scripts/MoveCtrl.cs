@@ -26,7 +26,6 @@ public class MoveCtrl : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(speed);
         if (!isStopped)
         {
 
@@ -72,6 +71,7 @@ public class MoveCtrl : MonoBehaviour
         if(hit.gameObject.tag == "Goal")
         {
             NextStage.gotoNext();
+            isStopped = true;
         }
 
     }
