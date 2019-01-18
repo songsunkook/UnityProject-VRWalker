@@ -54,26 +54,30 @@ public class MoveCtrl : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.tag == "JumpTable")
+
+        switch (hit.gameObject.tag)
         {
-            isUping = true;
-            Invoke("UpingEnd", 0.5f);
+            case "JumpTable":
+                isUping = true;
+                Invoke("UpingEnd", 0.5f);
+                break;
+
+            case "Booster":
+                speed = 5f;
+                CancelInvoke("BoostingEnd");
+                Invoke("BoostingEnd", 0.7f);
+                break;
+
+            case "Goal":
+                NextStage.gotoNext();
+                isStopped = true;
+                break;
+
+            case "Car":
+                DIe.die = true;
+                break;
 
         }
-
-        if(hit.gameObject.tag == "Booster")
-        {
-            speed = 5f;
-            CancelInvoke("BoostingEnd");
-            Invoke("BoostingEnd", 0.7f);
-        }
-
-        if(hit.gameObject.tag == "Goal")
-        {
-            NextStage.gotoNext();
-            isStopped = true;
-        }
-
     }
 
 }

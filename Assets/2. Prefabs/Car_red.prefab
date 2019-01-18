@@ -168,9 +168,10 @@ GameObject:
   - component: {fileID: 3518828835336385307}
   - component: {fileID: 3518828835337482715}
   - component: {fileID: 3518828835326057691}
+  - component: {fileID: 8863089339113009640}
   m_Layer: 0
   m_Name: car_red
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,6 +257,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &8863089339113009640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3518828835335548699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9400444, y: 1.0020274, z: 2.0274847}
+  m_Center: {x: 0.0045203567, y: 0.32556295, z: -0.100926876}
 --- !u!1 &5655386238630451582
 GameObject:
   m_ObjectHideFlags: 0

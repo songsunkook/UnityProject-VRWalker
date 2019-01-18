@@ -11,13 +11,14 @@ public class GameStart : MonoBehaviour {
     public GameObject backButton;
     public Text text;
     public static bool active = true;
-    
+    public static bool isStart = false;
+
     public void StartTimer()
     {
         gameObject.SetActive(true);
         backButton.SetActive(true);
         timerRun = true;
-        
+        isStart = false;
         //Invoke("Gamestart", 3.0f);
     }
 
@@ -50,6 +51,7 @@ public class GameStart : MonoBehaviour {
             {
                 time = 4.0f;
                 Gamestart();
+                isStart = true;
             }
         }
 
