@@ -21,7 +21,6 @@ public class StageText : MonoBehaviour
         {
 
             sceneName = SceneManager.GetActiveScene().name;
-            Debug.Log(sceneName);
             if (sceneName[4] == 'S')
             {
                 text.text = "Chapter " + sceneName[2] + "\n" + "Stage " + sceneName[sceneName.Length - 1].ToString();
