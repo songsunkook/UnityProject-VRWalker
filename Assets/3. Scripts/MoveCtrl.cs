@@ -59,7 +59,7 @@ public class MoveCtrl : MonoBehaviour
         {
             case "JumpTable":
                 isUping = true;
-                Invoke("UpingEnd", 0.5f);
+                Invoke("UpingEnd", hit.gameObject.GetComponent<JumpTime>().jumpTime);
                 break;
 
             case "Booster":

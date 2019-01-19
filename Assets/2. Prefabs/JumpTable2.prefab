@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4603099468975414392}
   - component: {fileID: 902195138404986036}
   - component: {fileID: 5950889329345655090}
+  - component: {fileID: 7892794235978063933}
   m_Layer: 0
   m_Name: Cube
   m_TagString: JumpTable
@@ -123,3 +124,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300056, guid: 1bd586063c947cd458e4c81b5e0f1141, type: 3}
+--- !u!114 &7892794235978063933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133418937266433064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692d6d93bc4551246b3f5ec85f7ae306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpTime: 0.5
