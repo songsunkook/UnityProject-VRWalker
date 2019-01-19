@@ -67,7 +67,12 @@ public class MoveCtrl : MonoBehaviour
                 CancelInvoke("BoostingEnd");
                 Invoke("BoostingEnd", 0.7f);
                 break;
-
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        switch (other.gameObject.tag)
+        {
             case "Goal":
                 NextStage.gotoNext();
                 isStopped = true;
@@ -79,5 +84,4 @@ public class MoveCtrl : MonoBehaviour
 
         }
     }
-
 }
