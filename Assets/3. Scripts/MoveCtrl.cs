@@ -7,11 +7,13 @@ public class MoveCtrl : MonoBehaviour
 {
     public float speed = 3.0f;                     // 이동 속도
     public float damping = 3.0f;                   // 회전 속도를 조절할 계수
+    public float jumpPower = 5f;
 
+    public GameObject starEffect;
 
     bool isUping = false;
 
-    public float jumpPower = 5f;
+    
     Vector3 dir;
 
     private Transform camTr;
@@ -85,6 +87,9 @@ public class MoveCtrl : MonoBehaviour
                 DIe.die = true;
                 break;
 
+            case "Star":
+                StarManager.GetStar(other.gameObject,starEffect);
+                break;
         }
     }
 }

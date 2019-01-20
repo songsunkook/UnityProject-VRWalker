@@ -43,9 +43,10 @@ GameObject:
   - component: {fileID: 3063517795870104233}
   - component: {fileID: 3063517795871201385}
   - component: {fileID: 921498939511600602}
+  - component: {fileID: 5882063352927016364}
   m_Layer: 0
   m_Name: object
-  m_TagString: Untagged
+  m_TagString: Star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,3 +123,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spinValue: 90
+--- !u!65 &5882063352927016364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063517795869197993}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.706968, y: 2.269531, z: 14.965387}
+  m_Center: {x: -0.036077976, y: 1.1347579, z: -0.44080853}
