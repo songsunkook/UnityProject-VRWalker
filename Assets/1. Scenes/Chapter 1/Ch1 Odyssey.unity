@@ -579,6 +579,7 @@ GameObject:
   - component: {fileID: 44057564}
   - component: {fileID: 44057566}
   - component: {fileID: 44057565}
+  - component: {fileID: 44057568}
   - component: {fileID: 44057567}
   m_Layer: 0
   m_Name: Fountain_1
@@ -649,8 +650,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44057563}
   m_Mesh: {fileID: 4300054, guid: 72e643619fa32984785527a0c110a313, type: 3}
---- !u!64 &44057567
-MeshCollider:
+--- !u!65 &44057567
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -659,10 +660,22 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300054, guid: 72e643619fa32984785527a0c110a313, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.6424046, y: 1.6568853, z: 2.296272}
+  m_Center: {x: -0.03529632, y: 0.029803097, z: 0.8338156}
+--- !u!65 &44057568
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44057563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1616275, y: 3.1616275, z: 0.51706606}
+  m_Center: {x: 0.14139898, y: -0.0000008557145, z: -0.055787176}
 --- !u!1 &47474135
 GameObject:
   m_ObjectHideFlags: 0
@@ -8879,10 +8892,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ab7726a352b5004cbf5f8e153868637, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &793803497
@@ -18204,7 +18213,9 @@ GameObject:
   - component: {fileID: 1730757592}
   - component: {fileID: 1730757594}
   - component: {fileID: 1730757593}
-  - component: {fileID: 1730757595}
+  - component: {fileID: 1730757598}
+  - component: {fileID: 1730757597}
+  - component: {fileID: 1730757596}
   m_Layer: 0
   m_Name: Fountain1
   m_TagString: Untagged
@@ -18274,8 +18285,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730757591}
   m_Mesh: {fileID: 4300056, guid: 72e643619fa32984785527a0c110a313, type: 3}
---- !u!64 &1730757595
-MeshCollider:
+--- !u!65 &1730757596
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18284,10 +18295,35 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300056, guid: 72e643619fa32984785527a0c110a313, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.87990236, y: 0.9345776, z: 2.113927}
+  m_Center: {x: 0.15399256, y: 0.007354064, z: 0.742643}
+--- !u!65 &1730757597
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730757591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4136307, y: 1.3826516, z: 0.83967185}
+  m_Center: {x: 0.17553301, y: 0.080061644, z: 0.10551576}
+--- !u!65 &1730757598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730757591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1616275, y: 3.1616275, z: 0.51706606}
+  m_Center: {x: 0.14139898, y: -0.0000008557145, z: -0.055787176}
 --- !u!1 &1730809100
 GameObject:
   m_ObjectHideFlags: 0
@@ -21247,10 +21283,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ab7726a352b5004cbf5f8e153868637, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1975755290
