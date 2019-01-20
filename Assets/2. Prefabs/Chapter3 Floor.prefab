@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8e566dd89fa53140b9f7982f5760221, type: 2}
+  - {fileID: 2100000, guid: 6b1c4c5f8eba0ed44b1b338caca4705d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -150,7 +150,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a1e89c3c3b13a34f9913fb06c67eceb, type: 2}
+  - {fileID: 2100000, guid: ddaf4c32423a18545a1e7eee3dfbf31c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -193,9 +193,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4059831290093667749}
-  - component: {fileID: 7299103795516726691}
+  - component: {fileID: 1762874208820442978}
   m_Layer: 0
-  m_Name: Chapter3 Floor 2
+  m_Name: Chapter2 Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,7 +217,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 15, z: 0}
---- !u!114 &7299103795516726691
+--- !u!114 &1762874208820442978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

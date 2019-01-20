@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8086850325347933848}
-  - component: {fileID: 4270894521451285328}
   m_Layer: 0
   m_Name: star
   m_TagString: Untagged
@@ -32,19 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90.00001}
---- !u!114 &4270894521451285328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2665616357186840474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5f6f9c2627fd0d4fbfd46e24c2630b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spinValue: 90
 --- !u!1 &3063517795869197993
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +42,7 @@ GameObject:
   - component: {fileID: 3063517795868777097}
   - component: {fileID: 3063517795870104233}
   - component: {fileID: 3063517795871201385}
-  - component: {fileID: 2151327848959991151}
+  - component: {fileID: 921498939511600602}
   m_Layer: 0
   m_Name: object
   m_TagString: Untagged
@@ -123,7 +109,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &2151327848959991151
+--- !u!114 &921498939511600602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

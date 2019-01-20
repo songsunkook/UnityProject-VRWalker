@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b1c4c5f8eba0ed44b1b338caca4705d, type: 2}
+  - {fileID: 2100000, guid: b11c4be651f87084280fed8564d8d8ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -150,7 +150,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ddaf4c32423a18545a1e7eee3dfbf31c, type: 2}
+  - {fileID: 2100000, guid: 2de05cdb603a2cf4fbae9301998ff8d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -194,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4059831290093667749}
   m_Layer: 0
-  m_Name: Chapter2 Floor
+  m_Name: Chapter3 Floor 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
