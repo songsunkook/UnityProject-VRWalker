@@ -48,9 +48,9 @@ EditorBuildSettings:
     path: Assets/1. Scenes/Chapter 1/Ch1 Odyssey.unity
     guid: b88abed51b2d2454abab3ce71c0b5875
   - enabled: 1
-    path: Assets/1. Scenes/Chapter 2/Ch2 Odyssey.unity
+    path: Assets/1. Scenes/Chapter 3/Ch3 Odyssey.unity
     guid: 53f5a0914b195b74abc2fb43a9e2ce22
   - enabled: 1
-    path: Assets/1. Scenes/Chapter 3/Ch3 Odyssey.unity
+    path: Assets/1. Scenes/Chapter 2/Ch2 Odyssey.unity
     guid: c319b66ba8723da448301b7ccbb15d58
   m_configObjects: {}
