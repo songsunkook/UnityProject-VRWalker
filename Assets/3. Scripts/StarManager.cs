@@ -27,7 +27,7 @@ public class StarManager : MonoBehaviour
         Destroy(star);
         Destroy(starEffect, 1f);
 
-        if (starCount == starFullCount)
+        if (starCount >= starFullCount)
         {
             isClear = true;
         }
