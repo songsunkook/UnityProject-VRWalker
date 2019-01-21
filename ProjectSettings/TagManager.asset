@@ -9,6 +9,7 @@ TagManager:
   - Goal
   - Car
   - Star
+  - Cactus
   layers:
   - Default
   - TransparentFX
