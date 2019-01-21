@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class BarFilling : MonoBehaviour {
 
-    public static bool checking = true;
-    bool DirectCheck = true;
+
     bool isFilling = false;
     float fillAmount = 0f;
     public float fullTime = 1.5f;
@@ -37,34 +36,20 @@ public class BarFilling : MonoBehaviour {
 
     public void StopFilling()
     {
-        DirectCheck = true;
         backbar.SetActive(false);
         forwardbar.SetActive(false);
         isFilling = false;
         image.fillAmount = 0f;
         fillAmount = 0f;
-        BarFilling.checking = true;
+
     }
 
-    private void CheckTrue()
-    {
-        DirectCheck = true;
-    }
-
-    private void CheckFalse()
-    {
-        DirectCheck = false;
-    }
 
     private void Update()
     {
-        if (checking == true)
-            CheckTrue();
-        if(checking == false)
-            CheckFalse();
 
 
-        if (isFilling && DirectCheck)
+        if (isFilling )
         {
             fillAmount += Time.deltaTime;
             image.fillAmount = fillAmount;
@@ -73,7 +58,6 @@ public class BarFilling : MonoBehaviour {
             {
                 isFilling = false;
 
-                BarFilling.checking = false;
 
                 if (transform.parent.name == "Menu")//메뉴라면
                 {
