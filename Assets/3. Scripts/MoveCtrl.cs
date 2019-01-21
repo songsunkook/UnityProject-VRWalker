@@ -32,7 +32,6 @@ public class MoveCtrl : MonoBehaviour
         cc = GetComponent<CharacterController>();
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
-            isStopped = false;
             originalSpeed = 3f;
         }
         else
