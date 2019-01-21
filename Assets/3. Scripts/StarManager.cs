@@ -23,19 +23,29 @@ public class StarManager : MonoBehaviour
     public static void GetStar(GameObject star, GameObject starEffect)
     {
         starCount++;
-        Instantiate(starEffect, star.transform.position, Quaternion.identity);
-        Destroy(star);
-        Destroy(starEffect, 1f);
-
-        if (starCount == starFullCount)
+        if (starCount >= starFullCount)
         {
             isClear = true;
         }
+        
+
+
+        starEffect.transform.position = star.transform.position;
+        ParticleSystem particle = starEffect.GetComponent<ParticleSystem>();
+        particle.Play();
+        Destroy(star);
+
+        //Instantiate(starEffect, star.transform.position, Quaternion.identity);
+        //Destroy(starEffect, 1f);
+
+
     }
 
 
     void backtoMenu()
     {
+        PlayerPrefs.SetInt((chapter + 1) + "-1", 1);
+        MoveCtrl.isStopped = true;
         SceneManager.LoadScene("MainMenu");
     }
 

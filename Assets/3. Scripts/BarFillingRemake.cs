@@ -17,9 +17,12 @@ public class BarFillingRemake : MonoBehaviour
 
     public void StartFilling()
     {
-        backbar.SetActive(true);
-        forwardbar.SetActive(true);
-        isFilling = true;
+        if (transform.GetChild(1).gameObject.activeSelf == false)
+        {
+            backbar.SetActive(true);
+            forwardbar.SetActive(true);
+            isFilling = true;
+        }
     }
 
     public void StopFilling()

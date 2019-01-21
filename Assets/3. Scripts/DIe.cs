@@ -38,6 +38,7 @@ public class DIe : MonoBehaviour {
             trans.position = new Vector3(0, 1, 0);
             //trans.position = firstTrans.position;
             MoveCtrl.isStopped = true;
+            HeartManager.timeNow = HeartManager.timeFull;
             startObject.SetActive(true);
             die = false;
         }

@@ -2220,7 +2220,7 @@ Transform:
   m_Children:
   - {fileID: 350910098}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &410440798
 PrefabInstance:
@@ -4143,7 +4143,7 @@ RectTransform:
   - {fileID: 1516847701}
   - {fileID: 996658041}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

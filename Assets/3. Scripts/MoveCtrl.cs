@@ -32,7 +32,6 @@ public class MoveCtrl : MonoBehaviour
         cc = GetComponent<CharacterController>();
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
-            isStopped = false;
             originalSpeed = 3f;
         }
         else
@@ -46,6 +45,7 @@ public class MoveCtrl : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Speed : " + speed);
         if (!isStopped)
         {
 
@@ -99,6 +99,10 @@ public class MoveCtrl : MonoBehaviour
                 CancelInvoke("BoostingEnd");
                 CancelInvoke("CactusEnd");
                 Invoke("CactusEnd", 0.3f);
+                break;
+
+            case "Water":
+                HeartManager.timeNow = HeartManager.timeFull;
                 break;
         }
     }
