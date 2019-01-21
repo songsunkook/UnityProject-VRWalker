@@ -13,7 +13,12 @@ public class MoveCtrl : MonoBehaviour
 
     bool isUping = false;
 
-    
+    double originalSpeed;
+    float boostSpeed = 2f;
+    float cactusSpeed = 0.6f;
+
+
+
     Vector3 dir;
 
     private Transform camTr;
@@ -26,7 +31,17 @@ public class MoveCtrl : MonoBehaviour
         camTr = Camera.main.GetComponent<Transform>();
         cc = GetComponent<CharacterController>();
         if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
             isStopped = false;
+            originalSpeed = 3f;
+        }
+        else
+        {
+            int sceneName = System.Convert.ToInt32(SceneManager.GetActiveScene().name[2]) - '0' - 1;
+            originalSpeed = 3 + 0.5 * (float)sceneName;
+        }
+
+        speed = (float)originalSpeed;
     }
 
     void Update()
@@ -54,7 +69,12 @@ public class MoveCtrl : MonoBehaviour
 
     void BoostingEnd()
     {
-        speed = 3f;
+        speed = (float)originalSpeed;
+    }
+
+    void CactusEnd()
+    {
+        speed = (float)originalSpeed;
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -68,9 +88,17 @@ public class MoveCtrl : MonoBehaviour
                 break;
 
             case "Booster":
-                speed = 5f;
+                speed = (float)originalSpeed + boostSpeed;
                 CancelInvoke("BoostingEnd");
+                CancelInvoke("CactusEnd");
                 Invoke("BoostingEnd", 0.7f);
+                break;
+
+            case "Cactus":
+                speed = (float)originalSpeed - cactusSpeed;
+                CancelInvoke("BoostingEnd");
+                CancelInvoke("CactusEnd");
+                Invoke("CactusEnd", 0.3f);
                 break;
         }
     }
