@@ -100,6 +100,10 @@ public class MoveCtrl : MonoBehaviour
                 CancelInvoke("CactusEnd");
                 Invoke("CactusEnd", 0.3f);
                 break;
+
+            case "Water":
+                HeartManager.timeNow = HeartManager.timeFull;
+                break;
         }
     }
     private void OnTriggerEnter(Collider other)
