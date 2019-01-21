@@ -46,6 +46,7 @@ public class MoveCtrl : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Speed : " + speed);
         if (!isStopped)
         {
 

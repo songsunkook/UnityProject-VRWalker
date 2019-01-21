@@ -36,6 +36,7 @@ public class StarManager : MonoBehaviour
 
     void backtoMenu()
     {
+        PlayerPrefs.SetInt((chapter + 1) + "-1", 1);
         SceneManager.LoadScene("MainMenu");
     }
 
