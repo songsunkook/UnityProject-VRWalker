@@ -8,6 +8,7 @@ public class DIe : MonoBehaviour {
     //Transform firstTrans;
     Transform trans;
     public GameObject startObject;
+    public GameObject reviveEffects;
     public static bool die = false;
 
     /*
@@ -28,6 +29,8 @@ public class DIe : MonoBehaviour {
     // Use this for initialization
     void Start () {
         trans = GetComponent<Transform>();
+        for (int i = 0; i < reviveEffects.transform.childCount; i++)
+            reviveEffects.transform.GetChild(i).GetComponent<ParticleSystem>().Stop();
         //firstTrans.position = trans.position;
 	}
 	
@@ -35,6 +38,8 @@ public class DIe : MonoBehaviour {
 	void Update () {
         if (trans.position.y < -3 || die == true)
         {
+            for (int i = 0; i < reviveEffects.transform.childCount; i++)
+                reviveEffects.transform.GetChild(i).GetComponent<ParticleSystem>().Play();
             trans.position = new Vector3(0, 1, 0);
             //trans.position = firstTrans.position;
             MoveCtrl.isStopped = true;
