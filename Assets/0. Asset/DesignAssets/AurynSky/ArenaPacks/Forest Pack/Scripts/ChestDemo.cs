@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*
+
 public class ChestDemo : MonoBehaviour {
 
     //This script goes on the ChestComplete prefab;
@@ -33,4 +33,3 @@ public class ChestDemo : MonoBehaviour {
 
     }
 }
-*/

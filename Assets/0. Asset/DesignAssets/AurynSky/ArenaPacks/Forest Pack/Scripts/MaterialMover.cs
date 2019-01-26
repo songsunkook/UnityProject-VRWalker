@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*
+
 public class MaterialMover : MonoBehaviour
 {
 
@@ -16,4 +16,4 @@ public class MaterialMover : MonoBehaviour
         float offset = Time.time * scrollSpeed;
         rend.material.SetTextureOffset("_MainTex", new Vector2(0, offset));
     }
-}*/
+}
