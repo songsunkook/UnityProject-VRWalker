@@ -77,6 +77,7 @@ public class BarFillingRemake : MonoBehaviour
                 //    SceneManager.LoadScene("MainMenu");
                 else//스테이지선택이라면
                 {
+                    MoveCtrl.isStopped = true;
                     if (transform.name == "Odyssey")//오디세이라면
                         SceneManager.LoadScene(transform.parent.name + " Odyssey");
                     else if (transform.name == "Back")//백이라면
