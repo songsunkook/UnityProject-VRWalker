@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 782652331}
   - component: {fileID: 1916494586685078994}
   - component: {fileID: 3718393866496005267}
-  - component: {fileID: 1672359321237842664}
+  - component: {fileID: 6825277925090322271}
+  - component: {fileID: 6102618949178708515}
   m_Layer: 0
-  m_Name: Flat_Palm_tree_01
+  m_Name: Ch3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,8 +79,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1672359321237842664
-MeshCollider:
+--- !u!65 &6825277925090322271
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,7 +89,19 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 200c7bff23e82db4c8efd0f74195fcf8, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.0546203, y: 7.3967075, z: 2.1260357}
+  m_Center: {x: 0.06613612, y: 3.7292614, z: 0.14084339}
+--- !u!65 &6102618949178708515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519980848490278746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.427741, y: 2.100624, z: 5.373109}
+  m_Center: {x: -1.6204243, y: 6.377303, z: 0.8751221}
