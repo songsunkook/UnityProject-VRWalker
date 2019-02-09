@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5666719, g: 0.6144774, b: 0.8208827, a: 1}
+  m_IndirectSpecularColor: {r: 0.3529704, g: 0.57369894, b: 0.86865705, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17415,7 +17415,6 @@ Transform:
   - {fileID: 226427776}
   - {fileID: 1766906126}
   - {fileID: 1003448215}
-  - {fileID: 710536091}
   - {fileID: 691062638}
   - {fileID: 313085151}
   - {fileID: 1958489235}
@@ -17437,8 +17436,6 @@ Transform:
   - {fileID: 715638192}
   - {fileID: 1131971798}
   - {fileID: 1381253864}
-  - {fileID: 2076208354}
-  - {fileID: 1142246916}
   - {fileID: 700078440}
   - {fileID: 2129209357}
   - {fileID: 1993609605}
@@ -17456,6 +17453,7 @@ Transform:
   - {fileID: 1305954058}
   - {fileID: 1773936809}
   - {fileID: 1832535197}
+  - {fileID: 710536091}
   - {fileID: 439757135}
   - {fileID: 1248454418}
   - {fileID: 2013528305}
@@ -17472,6 +17470,7 @@ Transform:
   - {fileID: 1649189844}
   - {fileID: 72770016}
   - {fileID: 1762436215}
+  - {fileID: 2076208354}
   - {fileID: 4298399}
   - {fileID: 1640472507}
   - {fileID: 2101801243}
@@ -17553,6 +17552,7 @@ Transform:
   - {fileID: 249375334}
   - {fileID: 1976035897}
   - {fileID: 1446684563}
+  - {fileID: 1142246916}
   - {fileID: 166019546}
   - {fileID: 1701966117}
   - {fileID: 2001337926}
@@ -17792,18 +17792,18 @@ Transform:
   - {fileID: 1723608873}
   - {fileID: 7558154}
   - {fileID: 102680655}
+  - {fileID: 862394085}
   - {fileID: 263510452}
   - {fileID: 206694341}
   - {fileID: 1998804598}
   - {fileID: 280504922}
   - {fileID: 1309961883}
   - {fileID: 979051374}
+  - {fileID: 1325462016}
   - {fileID: 59762700}
   - {fileID: 462423650}
-  - {fileID: 1325462016}
-  - {fileID: 571345953}
   - {fileID: 206168636}
-  - {fileID: 862394085}
+  - {fileID: 571345953}
   - {fileID: 617037892}
   - {fileID: 2032642248}
   - {fileID: 2082161031}
@@ -32892,7 +32892,11 @@ MonoBehaviour:
   speed: 3
   damping: 3
   jumpPower: 5
-  starEffect: {fileID: 138338, guid: cd1ff9e92aad8ac4db78b6ffd5f1eab7, type: 3}
+  starEffect: {fileID: 0}
+  footLeft: {fileID: 6101879439966342308, guid: 0e5fd69254ee42e4285c5b9ec8358b5f,
+    type: 3}
+  footRight: {fileID: 4292777393535364066, guid: d47087cf630092d4e98729ea4c302a93,
+    type: 3}
 --- !u!4 &1828222464
 Transform:
   m_ObjectHideFlags: 0

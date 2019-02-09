@@ -16185,6 +16185,10 @@ MonoBehaviour:
   damping: 3
   jumpPower: 5
   starEffect: {fileID: 0}
+  footLeft: {fileID: 6101879439966342308, guid: 0e5fd69254ee42e4285c5b9ec8358b5f,
+    type: 3}
+  footRight: {fileID: 4292777393535364066, guid: d47087cf630092d4e98729ea4c302a93,
+    type: 3}
 --- !u!4 &1440607590
 Transform:
   m_ObjectHideFlags: 0

@@ -10,6 +10,9 @@ public class MagneticManager : MonoBehaviour
 
     public GameObject PausePanel;
 
+    //private Cardboard MagnetButton;
+    // Cardboard 스크립트를 저장하는 변수
+
     private void TouchEnter()
     {
         pressing = true;
@@ -39,10 +42,22 @@ public class MagneticManager : MonoBehaviour
     private void Start()
     {
         PausePanel.SetActive(false);
+        //MagnetButton = GetComponent<Cardboard>();
+        // MagnetButton 변수에 현재 오브젝트가 가지고 있는 Cardboard 스크립트를 불러와 저장한다
     }
 
     private void Update()
     {
+        /*
+        if (MagnetButton.Triggered)
+        {
+            Debug.Log("Trigger");
+            MoveCtrl.isStopped = !MoveCtrl.isStopped;
+        }*/
+            
+
+
+        
         if (Input.GetMouseButtonDown(0))
             TouchEnter();
         if (Input.GetMouseButtonUp(0))

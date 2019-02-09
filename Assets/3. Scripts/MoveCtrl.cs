@@ -11,7 +11,12 @@ public class MoveCtrl : MonoBehaviour
 
     public GameObject starEffect;
 
+    public GameObject footLeft;
+    public GameObject footRight;
+
     bool isUping = false;
+    bool footing = true;
+    bool footPath = true;
 
     double originalSpeed;
     float boostSpeed = 2f;
@@ -25,6 +30,7 @@ public class MoveCtrl : MonoBehaviour
     private CharacterController cc;
 
     public static bool isStopped = true;
+    public static float yRot = 0f;
 
     void Start()
     {
@@ -46,6 +52,7 @@ public class MoveCtrl : MonoBehaviour
     void Update()
     {
         Debug.Log("Speed : " + speed);
+        yRot = transform.GetChild(0).GetComponent<Transform>().eulerAngles.y;
         if (!isStopped)
         {
 
@@ -77,11 +84,38 @@ public class MoveCtrl : MonoBehaviour
         speed = (float)originalSpeed;
     }
 
+    void FootPrinting()
+    {
+        footing = true;
+        footPath = !footPath;
+    }
+
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-
         switch (hit.gameObject.tag)
         {
+            case "Floor":
+                if (footing && !isStopped)
+                {
+                    if (footPath) //오른발찍기
+                    {
+                        Instantiate(footRight, new Vector3(transform.position.x,transform.position.y - 1,transform.position.z),
+                            transform.GetChild(0).transform.rotation);
+                        Debug.Log("RightFoot");
+                    }
+                    else //왼발찍기
+                    {
+                        Instantiate(footLeft, new Vector3(transform.position.x, transform.position.y - 1, transform.position.z),
+                            transform.GetChild(0).transform.rotation);
+                        Debug.Log("LeftFoot");
+                    }
+
+                    Invoke("FootPrinting", 0.6f);
+                    footing = false;
+                }
+
+                break;
+
             case "JumpTable":
                 isUping = true;
                 Invoke("UpingEnd", hit.gameObject.GetComponent<JumpTime>().jumpTime);
