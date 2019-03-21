@@ -101,13 +101,11 @@ public class MoveCtrl : MonoBehaviour
                     {
                         Instantiate(footRight, new Vector3(transform.position.x,transform.position.y - 1,transform.position.z),
                             transform.GetChild(0).transform.rotation);
-                        Debug.Log("RightFoot");
                     }
                     else //왼발찍기
                     {
                         Instantiate(footLeft, new Vector3(transform.position.x, transform.position.y - 1, transform.position.z),
                             transform.GetChild(0).transform.rotation);
-                        Debug.Log("LeftFoot");
                     }
 
                     Invoke("FootPrinting", 0.6f);
@@ -146,6 +144,7 @@ public class MoveCtrl : MonoBehaviour
         {
             case "Goal":
                 NextStage.gotoNext();
+                FirstTextHiding.isStarted = false;
                 isStopped = true;
                 break;
 

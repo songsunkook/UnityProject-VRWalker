@@ -20,18 +20,18 @@ public class MagneticManager : MonoBehaviour
     private void TouchExit()
     {
         //if(time < FullChargeTime)
-
-            if (StageText.sceneName[2] == 4 /*|| SceneManager.GetActiveScene().name == "MainMenu"*/)
-                //현재 스테이지가 챕터 4거나 현재 씬이 메인메뉴라면
-                MoveCtrl.isStopped = !MoveCtrl.isStopped;
-            else
+        if (StageText.sceneName[2] == '4')//챕터4라면
+            MoveCtrl.isStopped = !MoveCtrl.isStopped;
+        else
+        {
+            if (MoveCtrl.isStopped == true && SceneManager.GetActiveScene().name != "MainMenu")
             {
-                if (MoveCtrl.isStopped == true && SceneManager.GetActiveScene().name != "MainMenu")
-                {
-                    FirstTextHiding.isStarted = true;
-                    MoveCtrl.isStopped = false;
-                }
+                
+                MoveCtrl.isStopped = false;
             }
+        }
+
+        FirstTextHiding.isStarted = true;
 
         pressing = false;
         time = 0f;

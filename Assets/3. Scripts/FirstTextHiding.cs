@@ -21,6 +21,7 @@ public class FirstTextHiding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("isStarted = " + isStarted);
         if(isStarted)//만약 게임이 시작했으면
         {
             text.text = null;
