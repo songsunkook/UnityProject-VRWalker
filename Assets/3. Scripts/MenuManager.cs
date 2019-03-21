@@ -15,7 +15,7 @@ public class MenuManager : MonoBehaviour
             {
                 for(int j = 1; j <= 7; j++)
                 {
-                    PlayerPrefs.SetInt(i.ToString() + "-" + j.ToString(), 0);
+                    PlayerPrefs.SetInt(i.ToString() + "-" + j.ToString(), 0);//0:노멀,1:개발자
                 }
             }
 

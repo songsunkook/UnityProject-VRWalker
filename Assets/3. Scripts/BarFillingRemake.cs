@@ -57,8 +57,6 @@ public class BarFillingRemake : MonoBehaviour
             image.fillAmount += Time.deltaTime;
             if(image.fillAmount == 1)
             {
-                image.fillAmount = 0;
-                isFilling = false;
 
                 if (transform.parent.name == "Menu")//메뉴라면
                 {
@@ -88,7 +86,7 @@ public class BarFillingRemake : MonoBehaviour
                     else//스테이지라면
                         SceneManager.LoadScene(transform.parent.name + " Stage " + transform.name);
                 }
-
+                StopFilling();
             }
         }
         

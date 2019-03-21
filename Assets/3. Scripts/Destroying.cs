@@ -5,6 +5,7 @@ using UnityEngine;
 public class Destroying : MonoBehaviour
 {
     float x;
+    float time = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,9 @@ public class Destroying : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (MoveCtrl.isStopped)
+        time += Time.deltaTime;
+
+        if (time > 1)
             Destroy(gameObject);
     }
 }

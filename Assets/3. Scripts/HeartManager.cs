@@ -21,18 +21,15 @@ public class HeartManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("isStopped = " + MoveCtrl.isStopped);
         if (!MoveCtrl.isStopped)
         {
             timeNow -= Time.deltaTime;
             image.fillAmount = timeNow / timeFull;
-
-            if (timeNow < 0)
-            {
-                DIe.die = true;
-            }
         }
         else
         {
+            timeNow = timeFull;
             image.fillAmount = 1;
         }
     }
