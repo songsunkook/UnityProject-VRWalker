@@ -19,8 +19,6 @@ public class MoveCtrl : MonoBehaviour
     bool footPath = true;
 
     double originalSpeed;
-    float boostSpeed = 2f;
-    float cactusSpeed = 0.6f;
 
 
 
@@ -120,17 +118,17 @@ public class MoveCtrl : MonoBehaviour
                 break;
 
             case "Booster":
-                speed = (float)originalSpeed + boostSpeed;
+                speed = (float)originalSpeed * 2;
                 CancelInvoke("BoostingEnd");
                 CancelInvoke("CactusEnd");
-                Invoke("BoostingEnd", 0.7f);
+                Invoke("BoostingEnd", 1.5f);
                 break;
 
             case "Cactus":
-                speed = (float)originalSpeed - cactusSpeed;
+                speed = (float)originalSpeed / 2;
                 CancelInvoke("BoostingEnd");
                 CancelInvoke("CactusEnd");
-                Invoke("CactusEnd", 0.3f);
+                Invoke("CactusEnd", 1.5f);
                 break;
 
             case "Water":

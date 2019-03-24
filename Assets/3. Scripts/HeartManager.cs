@@ -8,7 +8,7 @@ public class HeartManager : MonoBehaviour
     private Image image;
 
     public static float timeNow;
-    public static float timeFull = 8f;
+    public static float timeFull = 13f;
 
 
     // Start is called before the first frame update
