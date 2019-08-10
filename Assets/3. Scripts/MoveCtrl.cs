@@ -132,7 +132,8 @@ public class MoveCtrl : MonoBehaviour
                 break;
 
             case "Water":
-                HeartManager.timeNow = HeartManager.timeFull;
+                //HeartManager.timeNow = HeartManager.timeFull;
+                HeartManager.die = true;
                 break;
         }
     }
