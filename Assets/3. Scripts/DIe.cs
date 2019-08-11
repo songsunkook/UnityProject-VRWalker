@@ -36,16 +36,20 @@ public class DIe : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (trans.position.y < -3 || die == true)
+        if (trans.position.y < -3 || die == true/* || HeartManager.timeNow < 0*/)
         {
+            die = false;
             for (int i = 0; i < reviveEffects.transform.childCount; i++)
                 reviveEffects.transform.GetChild(i).GetComponent<ParticleSystem>().Play();
             trans.position = new Vector3(0, 1, 0);
             //trans.position = firstTrans.position;
+
+            FirstTextHiding.isStarted = false;
+            Debug.Log("Die");
+            //HeartManager.timeNow = HeartManager.timeFull;
+            HeartManager.die = true;
             MoveCtrl.isStopped = true;
-            HeartManager.timeNow = HeartManager.timeFull;
             startObject.SetActive(true);
-            die = false;
         }
 	}
 }

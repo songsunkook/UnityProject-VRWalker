@@ -7,9 +7,11 @@ public class HeartManager : MonoBehaviour
 {
     private Image image;
 
-    public static float timeNow;
-    public static float timeFull = 8f;
+    private float timeNow;
 
+    public float timeFull = 13f;
+
+    public static bool die = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,18 +23,25 @@ public class HeartManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (die)
+        {
+            timeNow = timeFull;
+            die = false;
+        }
+        if(timeNow < 0)
+        {
+            DIe.die = true;
+        }
+
+        Debug.Log("isStopped = " + MoveCtrl.isStopped);
         if (!MoveCtrl.isStopped)
         {
             timeNow -= Time.deltaTime;
             image.fillAmount = timeNow / timeFull;
-
-            if (timeNow < 0)
-            {
-                DIe.die = true;
-            }
         }
         else
         {
+            timeNow = timeFull;
             image.fillAmount = 1;
         }
     }

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class StageText : MonoBehaviour
 {
     Text text;
-    string sceneName;
+    public static string sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +17,10 @@ public class StageText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameStart.isStart == false)
+        //if (GameStart.isStart == false)
+        //{
+        if (FirstTextHiding.isStarted == false)
         {
-
             sceneName = SceneManager.GetActiveScene().name;
             if (sceneName[4] == 'S')
             {
@@ -29,11 +30,15 @@ public class StageText : MonoBehaviour
             {
                 text.text = "Chapter " + sceneName[2] + "\n" + "Odyssey";
             }
-
         }
         else
         {
             text.text = null;
         }
+        //}
+        //else
+        //{
+        //    text.text = null;
+        //}
     }
 }

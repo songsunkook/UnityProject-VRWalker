@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 23248802485315498}
   - component: {fileID: 95846521961778924}
   - component: {fileID: 114953712324284294}
+  - component: {fileID: 3824157575660946321}
   m_Layer: 0
   m_Name: SpikeTrapD
   m_TagString: Untagged
@@ -393,6 +394,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spikeTrapAnim: {fileID: 0}
+--- !u!65 &3824157575660946321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498791207746926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 0.18, z: 2.0000007}
+  m_Center: {x: 0.000000059604645, y: 0.033333294, z: 0.00000011920929}
 --- !u!1 &1533954398984724
 GameObject:
   m_ObjectHideFlags: 0
