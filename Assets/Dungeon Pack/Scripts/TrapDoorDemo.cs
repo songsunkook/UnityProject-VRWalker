@@ -7,6 +7,7 @@ public class TrapDoorDemo : MonoBehaviour {
     //This script goes on the TrapDoor prefab;
 
     public Animator TrapDoorAnim; //Animator for the trap door;
+    public float startTime = 0f;
 
     private BoxCollider col;
 
@@ -17,9 +18,14 @@ public class TrapDoorDemo : MonoBehaviour {
         TrapDoorAnim = GetComponent<Animator>();
         col = GetComponent<BoxCollider>();
         //start opening and closing the trap for demo purposes;
-        StartCoroutine(OpenCloseTrap());
+        Invoke("temp", startTime);
+        //StartCoroutine(OpenCloseTrap());
     }
 
+    void temp()
+    {
+        StartCoroutine(OpenCloseTrap());
+    }
 
     IEnumerator OpenCloseTrap()
     {

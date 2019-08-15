@@ -7,6 +7,7 @@ public class SpikeTrapDemo : MonoBehaviour {
     //This script goes on the SpikeTrap prefab;
 
     public Animator spikeTrapAnim; //Animator for the SpikeTrap;
+    public float startTime = 0f;
 
     // Use this for initialization
     void Awake()
@@ -14,9 +15,14 @@ public class SpikeTrapDemo : MonoBehaviour {
         //get the Animator component from the trap;
         spikeTrapAnim = GetComponent<Animator>();
         //start opening and closing the trap for demo purposes;
-        StartCoroutine(OpenCloseTrap());
+        Invoke("temp", startTime);
+        //StartCoroutine(OpenCloseTrap());
     }
 
+    void temp()
+    {
+        StartCoroutine(OpenCloseTrap());
+    }
 
     IEnumerator OpenCloseTrap()
     {
