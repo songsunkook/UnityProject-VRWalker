@@ -36,7 +36,15 @@ public class DIe : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (trans.position.y < -3 || die == true/* || HeartManager.timeNow < 0*/)
+        if(trans.position.y < -3)
+        {
+            if(StageText.sceneName[2] != '4')
+            {
+                die = true;
+            }
+        }
+
+        if (die == true)
         {
             die = false;
             for (int i = 0; i < reviveEffects.transform.childCount; i++)
