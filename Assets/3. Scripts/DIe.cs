@@ -11,21 +11,6 @@ public class DIe : MonoBehaviour {
     public GameObject reviveEffects;
     public static bool die = false;
 
-    /*
-    public static void Die()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        GameObject[] startObject = GameObject.FindGameObjectsWithTag("startObject");
-        Debug.Log("Die");
-        player.transform.position = new Vector3(0, 1, 0);
-        MoveCtrl.isStopped = true;
-        for (int i = 0; i < startObject.Length; i++)
-        {
-            startObject[i].SetActive(true);
-            Debug.Log("Active");
-        }
-    }*/
-
     // Use this for initialization
     void Start () {
         trans = GetComponent<Transform>();

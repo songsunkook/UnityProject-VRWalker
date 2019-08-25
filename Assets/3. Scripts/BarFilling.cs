@@ -78,10 +78,7 @@ public class BarFilling : MonoBehaviour {
                     else//스테이지라면
                         SceneManager.LoadScene(transform.parent.name + " Stage " + transform.name);
                 }
-
-
             }
-
         }
         else
         {
@@ -90,7 +87,5 @@ public class BarFilling : MonoBehaviour {
             image.fillAmount = 0f;
             fillAmount = 0f;
         }
-
     }
-
 }

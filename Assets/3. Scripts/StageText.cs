@@ -17,8 +17,6 @@ public class StageText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (GameStart.isStart == false)
-        //{
         if (FirstTextHiding.isStarted == false)
         {
             sceneName = SceneManager.GetActiveScene().name;
@@ -35,10 +33,5 @@ public class StageText : MonoBehaviour
         {
             text.text = null;
         }
-        //}
-        //else
-        //{
-        //    text.text = null;
-        //}
     }
 }

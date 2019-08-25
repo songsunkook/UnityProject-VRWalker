@@ -67,12 +67,7 @@ public class BarFillingRemake : MonoBehaviour
                         else
                             Chapter[i].SetActive(false);
                     }
-
-                    //Chapter[System.Convert.ToInt32(transform.name) - 1].SetActive(true);
-                    //transform.parent.gameObject.SetActive(false);
                 }
-                //else if (SceneManager.GetActiveScene().name[0] == 'C')//게임룸이라면(게임룸이 아니면 씬이름 첫글자에 C 붙이지말기
-                //    SceneManager.LoadScene("MainMenu");
                 else//스테이지선택이라면
                 {
                     MoveCtrl.isStopped = true;

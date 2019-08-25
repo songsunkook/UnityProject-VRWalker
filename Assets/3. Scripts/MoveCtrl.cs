@@ -137,6 +137,7 @@ public class MoveCtrl : MonoBehaviour
                 break;
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         switch (other.gameObject.tag)
